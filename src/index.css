@@ -1,1 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200..700&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Great+Vibes&family=Mrs+Saint+Delafield&family=Style+Script&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import "tailwindcss";
+
+@theme {
+  --breakpoint-sxs:445px;
+  --breakpoint-xxs:550px;
+  --breakpoint-xxxs:690px;
+  --breakpoint-md:768px;
+  --breakpoint-xmd:880px;
+  --breakpoint-lg:1024px;
+  --breakpoint-lar:1100px;
+  --breakpoint-xlar:1250px;
+  --breakpoint-halfxl:1400px;
+  --font-anton: "Anton", "sans-serif";
+  --font-oswald: "Oswald", "sans-serif";      /*use this */
+  --font-playfair: "Playfair", serif;   
+  --font-geist: "Geist", sans-serif;          /*use this */
+  --font-mrs: "Mrs Saint Delafield", cursive;
+  --font-style: "Style Script", cursive;
+  --font-great: "Great Vibes", cursive;       /*use this */
+  --font-unna: "Unna", serif;    /*use this */
+}
+
+body {
+  font-family: var(--font-geist);
+}
+
+
+.text-outline-filled {
+  -webkit-text-stroke: 0.1px gray;
+  color: white;
+}
+
+.orangeButton{
+    /* background-color: orange; */
+    color: white;
+    padding: 0.50rem 0.75rem;
+    width: fit-content;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.25rem;
+}
+
+.orangeButton::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: oklch(75% 0.183 55.934);
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease;
+    text-align: center;
+    z-index: -2;
+}
+.seconddiv,
+.thirddiv,
+.fourthdiv{
+    width: 20%;
+    height: 100%;
+    /* transform: translateX(100%); */
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.seconddiv::before,
+.seconddiv::after,
+.thirddiv::before,
+.thirddiv::after,
+.fourthdiv::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color:oklch(70.5% 0.213 47.604);
+    transition: all 0.7s ease;
+    z-index: -1;
+}
+
+
+.seconddiv::before{
+    bottom: 100%;
+    left: 0;
+}
+
+.seconddiv::after{
+    top: 100%;
+    left: 100%;
+}
+
+.thirddiv::before{
+    bottom: 100%;
+    left: 200%;
+}
+.thirddiv::after{
+    top: 100%;
+    left: 300%;
+}
+
+.fourthdiv::before{
+    bottom: 100%;
+    left: 400%;
+}
+
+.orangeButton:hover{
+    color: white;
+    /* z-index: 2; */
+}
+
+.orangeButton:hover .seconddiv::before{
+    bottom: 0;
+    left: 0;
+}
+
+.orangeButton:hover .seconddiv::after{
+    top: 0;
+    left: 100%;
+}
+
+.orangeButton:hover .thirddiv::before{
+    bottom: 0;
+    left: 200%;
+}
+
+.orangeButton:hover .thirddiv::after{
+    top: 0;
+    left: 300%;
+}
+
+.orangeButton:hover .fourthdiv::before{
+    bottom: 0;
+    left: 400%;
+}

@@ -1,3 +1,8 @@
 Kindly write all your notes here
 
 
+// How did i make the routing
+
+- Specifying the path
+- adding the route
+- adding a loader function that is responsible for sending and retreiving the api response before component gets executed.

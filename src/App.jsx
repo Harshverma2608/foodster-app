@@ -51,7 +51,6 @@ const router = createBrowserRouter([
     path: "/",
     element: <Home />,
     errorElement: <ErrorPage />,
-    loader: requireAuth,
   },
   {
     path: "/documentation",

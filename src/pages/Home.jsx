@@ -81,7 +81,7 @@ const HeroSlider = () => {
             backgroundImage: `url('${s.image}')`,
             opacity: i === current ? 1 : 0,
           }}
-        />
+        />  
       ))}
       <div className="absolute inset-0 bg-black/55" />
 
@@ -321,7 +321,7 @@ const Home = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-gray-400 py-10 px-6 md:px-16">
+      <footer className="bg-orange-50text-gray-400 py-10 px-6 md:px-16">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
             <img src="/FoodsterLogo2.png" alt="Foodster" className="h-7 w-auto opacity-80" />

@@ -143,3 +143,43 @@ body {
     bottom: 0;
     left: 400%;
 }
+
+.giftBox{
+    clip-path: polygon(100% 100%, 0 98%, 0 52%, 0 26%, 18% 26%, 0 0, 30% 20%, 25% 0, 44% 15%, 50% 0, 54% 15%, 75% 0, 68% 20%, 100% 0, 81% 25%, 100% 25%, 100% 49%);
+}
+
+.sea1{
+    color: transparent;
+    position: absolute;
+    height: full;
+    width: full;
+    top: 0;
+    transform: translateX(-50%) translateY(-50%);
+    white-space: nowrap;
+    -webkit-text-stroke: 2px blue;
+}
+.sea2{
+    color: blue;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%) translateY(-50%);
+    white-space: nowrap;
+    animation: wave 2s ease-in-out infinite;
+}
+
+@keyframes wave {
+    0%{
+        clip-path: polygon(0 47%, 23% 63%, 53% 61%, 74% 53%, 89% 38%, 100% 28%, 100% 100%, 0% 98%, 0% 98%, 0 100%);
+
+    }
+
+    50%{
+        clip-path: polygon(0 24%, 26% 49%, 48% 53%, 69% 55%, 90% 60%, 100% 74%, 100% 100%, 0% 98%, 0% 98%, 0 100%);
+
+    }
+
+    100%{
+        clip-path: polygon(0 47%, 23% 63%, 53% 61%, 74% 53%, 89% 38%, 100% 28%, 100% 100%, 0% 98%, 0% 98%, 0 100%);
+
+    }
+}

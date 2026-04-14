@@ -6,3 +6,18 @@ Kindly write all your notes here
 - Specifying the path
 - adding the route
 - adding a loader function that is responsible for sending and retreiving the api response before component gets executed.
+
+
+-- Points to check  
+
+- Converting your "/" to "/visit" and Hero.jsx to Visit.jsx
+- Added some css styling to Visit.jsx
+- Adding Authentication check - Only the Authenticated user can reach to "/" Home.jsx page. -- Go through the auth.js for it -- connected to app.jsx (requireAuth)
+- If the user is login then he should not reach the /visit end point. (Because of the publicOnly)
+
+--- SOMETHING YOU NEED TO DO
+
+- Make a separate component file for your Hero Slider can be used in another page or its just easy to manage if put in another file.
+- Make footer as the different component  we will be using it in more of our pages.
+- Do npm i for installing axios library
+- Do gpt about the axios configuration object , and how you can layer your axios code so you don't have to write unnecessary code again and again.

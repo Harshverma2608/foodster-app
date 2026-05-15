@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && npm run build:backend",
+    "build:backend": "cd foodster-backend && npm install",
+    "start": "cd foodster-backend && npm start",
     "lint": "eslint .",
     "preview": "vite preview"
   },

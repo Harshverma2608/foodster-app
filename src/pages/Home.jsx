@@ -24,6 +24,10 @@ const Home = () => {
       desc: 'Find the best home-cooked meals near you with our real-time search.',
       link: '/discover',
       btnText: 'Search Providers',
+      bg: 'bg-blue-50/50',
+      border: 'border-blue-100',
+      text: 'text-blue-600',
+      hover: 'hover:border-blue-300 hover:shadow-blue-100'
     },
     {
       title: 'My Subscriptions',
@@ -31,6 +35,10 @@ const Home = () => {
       desc: 'Manage your active tiffin plans, track deliveries, and pause anytime.',
       link: '/my-plans',
       btnText: 'View Plans',
+      bg: 'bg-green-50/50',
+      border: 'border-green-100',
+      text: 'text-green-600',
+      hover: 'hover:border-green-300 hover:shadow-green-100'
     },
     {
       title: 'Favorites',
@@ -38,77 +46,80 @@ const Home = () => {
       desc: 'You have 3 saved tiffin providers. Re-order your favorites instantly.',
       link: '/discover',
       btnText: 'View Favorites',
+      bg: 'bg-pink-50/50',
+      border: 'border-pink-100',
+      text: 'text-pink-600',
+      hover: 'hover:border-pink-300 hover:shadow-pink-100'
     },
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 font-geist">
+    <div className="min-h-screen bg-[#fafafa] font-geist pb-20">
       <AuthNavbar />
       
-      <main className="pt-28 pb-16 px-6 md:px-16 max-w-7xl mx-auto">
-        {/* Welcome Section */}
-        <div className="bg-white rounded-2xl p-8 md:p-12 shadow-sm border border-gray-100 mb-10 flex flex-col md:flex-row items-center justify-between gap-8 relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-orange-100 rounded-full blur-3xl -mr-20 -mt-20 opacity-50 pointer-events-none"></div>
-          <div className="relative z-10">
-            <h1 className="font-oswald text-3xl md:text-5xl text-gray-800 mb-4 tracking-wide capitalize">
-              Welcome back, {getUsername(email)}! 👋
-            </h1>
-            <p className="font-unna text-lg text-gray-600 max-w-2xl">
-              Craving a home-cooked meal? Your next delicious tiffin is just a few clicks away. 
-            </p>
-          </div>
-          <div className="hidden md:flex flex-col gap-2 relative z-10">
-             <div className="bg-orange-50 border border-orange-200 p-4 rounded-xl flex items-center gap-4">
-                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-xl shadow-sm">
+      <main className="pt-28 px-6 md:px-16 max-w-7xl mx-auto">
+        {/* Stunning Premium Welcome Banner */}
+        <div className="relative rounded-3xl overflow-hidden shadow-2xl mb-16 group">
+          {/* Animated Mesh Gradient Background */}
+          <div className="absolute inset-0 bg-gradient-to-br from-orange-400 via-red-500 to-pink-500 opacity-90 transition-transform duration-1000 group-hover:scale-105"></div>
+          <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 mix-blend-overlay"></div>
+          
+          <div className="relative z-10 p-10 md:p-16 flex flex-col md:flex-row items-center justify-between gap-10">
+            <div className="text-white">
+              <span className="inline-block px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-xs font-bold uppercase tracking-wider mb-4 border border-white/30">
+                Dashboard Overview
+              </span>
+              <h1 className="font-oswald text-4xl md:text-6xl mb-4 tracking-wide drop-shadow-md">
+                Welcome back, {getUsername(email)}!
+              </h1>
+              <p className="font-unna text-xl md:text-2xl text-white/90 max-w-xl leading-relaxed">
+                Your culinary hub. Track today's delivery, discover new home chefs, and manage your healthy lifestyle.
+              </p>
+            </div>
+            
+            {/* Glassmorphism Quick Status Card */}
+            <div className="bg-white/10 backdrop-blur-xl border border-white/30 rounded-2xl p-6 shadow-[0_8px_32px_0_rgba(31,38,135,0.15)] w-full md:w-80 flex-shrink-0 transform transition-transform hover:-translate-y-2">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center text-2xl shadow-inner">
                   🚚
                 </div>
                 <div>
-                  <p className="text-xs text-gray-500 font-bold uppercase tracking-wider mb-0.5">Next Delivery</p>
-                  <p className="font-medium text-gray-800">Today, 1:00 PM</p>
-                  <p className="text-sm text-orange-600 font-medium">Maa Ki Rasoi</p>
+                  <p className="text-white/70 text-xs font-bold uppercase tracking-wider mb-0.5">Next Delivery</p>
+                  <p className="text-white font-bold text-lg">Today, 1:00 PM</p>
                 </div>
-             </div>
+              </div>
+              <div className="bg-black/20 rounded-xl p-4 border border-white/10">
+                <p className="text-white/90 text-sm font-medium mb-1">Maa Ki Rasoi - Premium Veg</p>
+                <div className="w-full bg-black/30 rounded-full h-1.5 mt-2 overflow-hidden">
+                   <div className="bg-green-400 h-1.5 rounded-full w-3/4 animate-[pulse_2s_ease-in-out_infinite]"></div>
+                </div>
+                <p className="text-xs text-white/60 mt-2 text-right">Out for delivery</p>
+              </div>
+            </div>
           </div>
         </div>
 
-        {/* Dashboard Grid */}
-        <h2 className="font-oswald text-2xl text-gray-800 mb-6 tracking-wide">QUICK ACTIONS</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        {/* Action Cards */}
+        <div className="flex items-center justify-between mb-8">
+          <h2 className="font-oswald text-3xl text-gray-900 tracking-wide">QUICK ACTIONS</h2>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {dashboardCards.map((card, idx) => (
-            <div key={idx} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md hover:border-orange-200 transition-all flex flex-col h-full group">
-              <div className="text-4xl mb-4 bg-orange-50 w-16 h-16 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+            <div key={idx} className={`bg-white rounded-3xl p-8 shadow-sm border border-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl group ${card.hover}`}>
+              <div className={`w-20 h-20 rounded-2xl ${card.bg} ${card.border} border flex items-center justify-center text-4xl mb-8 transform transition-transform duration-500 group-hover:rotate-12`}>
                 {card.icon}
               </div>
-              <h3 className="font-oswald text-xl text-gray-800 mb-2">{card.title}</h3>
-              <p className="text-gray-600 text-sm mb-6 flex-grow">{card.desc}</p>
+              <h3 className="font-oswald text-2xl text-gray-900 mb-3">{card.title}</h3>
+              <p className="text-gray-500 leading-relaxed mb-8 h-16">{card.desc}</p>
               <Link 
                 to={card.link}
-                className="inline-block text-center border-2 border-orange-400 text-orange-500 hover:bg-orange-400 hover:text-white font-medium px-4 py-2 rounded transition-colors"
+                className={`inline-flex items-center gap-2 font-bold ${card.text} hover:gap-4 transition-all`}
               >
-                {card.btnText}
+                {card.btnText} <span className="text-xl">→</span>
               </Link>
             </div>
           ))}
-        </div>
-
-        {/* Featured / Highlight */}
-        <div className="bg-gray-800 rounded-2xl p-8 md:p-12 border border-gray-700 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8">
-           <div className="absolute inset-0 bg-[url('/hero2.jpg')] bg-cover bg-center opacity-20"></div>
-           <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/80 to-transparent"></div>
-           
-           <div className="relative z-10 max-w-xl">
-              <span className="bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded mb-4 inline-block uppercase tracking-wider">New</span>
-              <h2 className="font-oswald text-3xl md:text-4xl text-white mb-3">Tired of cooking?</h2>
-              <p className="text-gray-300 mb-6 text-lg">
-                Explore our curated list of highly-rated home chefs in your area. Healthy, hygienic, and authentic meals delivered straight to your door.
-              </p>
-              <Link to="/discover" className="orangeButton text-sm px-8 py-3 inline-block">
-                  <span className="relative z-10">Discover Providers</span>
-                  <div className="seconddiv" />
-                  <div className="thirddiv" />
-                  <div className="fourthdiv" />
-              </Link>
-           </div>
         </div>
       </main>
     </div>

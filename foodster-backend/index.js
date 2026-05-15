@@ -12,9 +12,16 @@ const allowedOrigins = [process.env.FRONTEND_URL].filter(Boolean);
 
 function isOriginAllowed(origin) {
   if (!origin) return true;
+
+  // Dev: allow any localhost regardless of port
   if (process.env.NODE_ENV !== "production") {
     if (/^http:\/\/localhost(:\d+)?$/.test(origin)) return true;
   }
+
+  // If no FRONTEND_URL is configured, allow all origins (fail-open)
+  if (allowedOrigins.length === 0) return true;
+
+  // Prod: exact match against FRONTEND_URL (trailing-slash tolerant)
   const clean = (s) => s.replace(/\/$/, "");
   return allowedOrigins.map(clean).includes(clean(origin));
 }

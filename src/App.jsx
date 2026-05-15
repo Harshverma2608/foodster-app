@@ -5,6 +5,9 @@ import UserLogin from "./pages/UserLogin";
 import UserSignup from "./pages/UserSignup";
 import Visit from "./pages/Visit";
 import Home from "./pages/Home";
+import Recipes from "./pages/Recipes";
+import MealPlan from "./pages/MealPlan";
+import GroceryList from "./pages/GroceryList";
 import Documentation from "./pages/Documentation";
 import ErrorPage from "./pages/ErrorPage";
 import { action as loginAction } from "./pages/UserLogin";
@@ -17,6 +20,24 @@ const router = createBrowserRouter([
     element: <Home />,
     errorElement: <ErrorPage />,
     action: loginAction,
+    loader: requireAuth,
+  },
+  {
+    path: "/recipes",
+    element: <Recipes />,
+    errorElement: <ErrorPage />,
+    loader: requireAuth,
+  },
+  {
+    path: "/meal-plan",
+    element: <MealPlan />,
+    errorElement: <ErrorPage />,
+    loader: requireAuth,
+  },
+  {
+    path: "/grocery-list",
+    element: <GroceryList />,
+    errorElement: <ErrorPage />,
     loader: requireAuth,
   },
   {

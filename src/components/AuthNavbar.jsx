@@ -13,6 +13,9 @@ const AuthNavbar = () => {
 
   const navLinks = [
     { name: "Dashboard", path: "/" },
+    { name: "Recipes", path: "/recipes" },
+    { name: "Meal Plan", path: "/meal-plan" },
+    { name: "Grocery List", path: "/grocery-list" },
     { name: "Documentation", path: "/documentation" },
   ];
 

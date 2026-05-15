@@ -23,21 +23,21 @@ const Home = () => {
       title: 'My Recipes',
       icon: '🍲',
       desc: 'You have 12 saved recipes. Try making something new today!',
-      link: '#',
+      link: '/recipes',
       btnText: 'View Recipes',
     },
     {
       title: 'Weekly Meal Plan',
       icon: '📅',
       desc: 'Your meal plan for this week is 80% complete. Plan your weekend meals.',
-      link: '#',
+      link: '/meal-plan',
       btnText: 'Edit Plan',
     },
     {
       title: 'Grocery List',
       icon: '🛒',
       desc: 'You have 15 items on your grocery list for your upcoming meals.',
-      link: '#',
+      link: '/grocery-list',
       btnText: 'Shop Now',
     },
   ];
@@ -96,7 +96,7 @@ const Home = () => {
               <p className="font-great text-orange-500 text-2xl mb-1">Recommended for you</p>
               <h2 className="font-oswald text-2xl text-gray-800 tracking-wide">RECIPE OF THE DAY</h2>
             </div>
-            <Link to="#" className="text-orange-500 font-medium hover:underline text-sm hidden md:block">
+            <Link to="/recipes" className="text-orange-500 font-medium hover:underline text-sm hidden md:block">
               Explore more recipes →
             </Link>
           </div>

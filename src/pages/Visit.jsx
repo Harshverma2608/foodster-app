@@ -65,7 +65,7 @@ const Visit = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 px-6 md:px-16 overflow-hidden">
+      <section className="relative pt-24 pb-20 md:pt-28 md:pb-32 px-6 md:px-16 overflow-hidden">
         {/* Background Decorative Elements */}
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-br from-orange-100 to-red-50 rounded-full blur-3xl -mr-40 -mt-40 opacity-70"></div>
         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-tr from-blue-50 to-emerald-50 rounded-full blur-3xl -ml-20 -mb-20 opacity-70"></div>

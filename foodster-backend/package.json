@@ -6,6 +6,9 @@
   "author": "sarthak",
   "type": "commonjs",
   "main": "index.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,9 +17,13 @@
     "bcryptjs": "^3.0.3",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
-    "express": "^4.21.2",
+    "express": "4.21.2",
     "helmet": "^8.1.0",
     "jsonwebtoken": "^9.0.3",
-    "mongoose": "^9.6.2"
+    "mongoose": "^9.6.2",
+    "path-to-regexp": "0.1.12"
+  },
+  "overrides": {
+    "path-to-regexp": "0.1.12"
   }
 }

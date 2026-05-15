@@ -20,14 +20,14 @@ const Discover = () => {
   });
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col font-geist overflow-hidden">
+    <div className="min-h-screen bg-gray-50 flex flex-col font-geist">
       <AuthNavbar />
       
       {/* Split Screen Container */}
-      <main className="flex-grow pt-[72px] flex flex-col md:flex-row h-[calc(100vh)]">
+      <main className="flex-grow pt-16 flex flex-col md:flex-row md:h-[calc(100vh-64px)]">
         
         {/* LEFT PANEL: Search and List */}
-        <div className="w-full md:w-1/2 lg:w-5/12 bg-white flex flex-col h-full border-r border-gray-200 shadow-[2px_0_15px_-3px_rgba(0,0,0,0.05)] z-10">
+        <div className="w-full md:w-1/2 lg:w-5/12 bg-white flex flex-col md:h-full border-r border-gray-200 shadow-[2px_0_15px_-3px_rgba(0,0,0,0.05)] z-10">
           
           {/* Sticky Header inside Left Panel */}
           <div className="p-6 border-b border-gray-100 bg-white sticky top-0 z-20">
@@ -65,7 +65,7 @@ const Discover = () => {
           </div>
 
           {/* Scrollable List */}
-          <div className="flex-grow overflow-y-auto p-6 space-y-5 bg-gray-50/50">
+          <div className="flex-grow overflow-y-auto p-4 md:p-6 space-y-4 bg-gray-50/50 max-h-[60vh] md:max-h-none">
             {filteredProviders.length > 0 ? (
               filteredProviders.map(provider => (
                 <div key={provider.id} className="bg-white rounded-xl p-4 flex gap-4 border border-gray-100 shadow-sm hover:shadow-md hover:border-orange-200 transition-all cursor-pointer group">
@@ -114,7 +114,7 @@ const Discover = () => {
         </div>
 
         {/* RIGHT PANEL: Map Interface Mockup */}
-        <div className="hidden md:block md:w-1/2 lg:w-7/12 relative bg-gray-200">
+        <div className="hidden md:block md:w-1/2 lg:w-7/12 relative bg-gray-200 md:h-full">
           <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80')] bg-cover bg-center opacity-40 mix-blend-luminosity"></div>
           
           {/* Map Overlay Elements */}

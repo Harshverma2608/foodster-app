@@ -62,7 +62,7 @@ export async function action({ request }) {
     return redirect("/");
   } catch {
     return {
-      message: "Cannot reach server. Please check backend and try again.",
+      message: "Cannot reach server. Please check your connection and try again.",
     };
   }
 }

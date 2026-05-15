@@ -23,11 +23,11 @@ const AuthNavbar = () => {
   };
 
   const navLinks = [
-    { name: "Dashboard", path: "/" },
-    { name: "Menu", path: "/menu" },
-    { name: "Plans", path: "/plans" },
-    { name: "Discover", path: "/discover" },
-    { name: "My Plans", path: "/my-plans" },
+    { name: "Dashboard", path: "/", icon: "home" },
+    { name: "Menu", path: "/menu", icon: "restaurant_menu" },
+    { name: "Plans", path: "/plans", icon: "subscriptions" },
+    { name: "Discover", path: "/discover", icon: "explore" },
+    { name: "My Plans", path: "/my-plans", icon: "receipt_long" },
   ];
 
   return (
@@ -92,6 +92,7 @@ const AuthNavbar = () => {
                     : "text-gray-700 hover:bg-gray-50"
                 }`}
               >
+                <span className="material-symbols-outlined text-[20px]">{link.icon}</span>
                 {link.name}
               </Link>
             ))}

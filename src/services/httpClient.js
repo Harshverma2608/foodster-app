@@ -5,6 +5,7 @@ const API_BASE_URL =
 
 export const httpClient = axios.create({
   baseURL: API_BASE_URL,
+  timeout: 10000, // 10s — prevents hanging on cold Render starts
   headers: {
     "Content-Type": "application/json",
   },

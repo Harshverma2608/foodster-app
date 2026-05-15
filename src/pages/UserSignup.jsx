@@ -204,6 +204,14 @@ export async function action({ request }) {
     return { message: "Please enter both email and password" };
   }
 
+  if (!/^\S+@\S+\.\S+$/.test(email)) {
+    return { message: "Please enter a valid email address" };
+  }
+
+  if (password.length < 6) {
+    return { message: "Password must be at least 6 characters" };
+  }
+
   try {
     const { ok, data } = await signupUser({ email, password });
 
@@ -211,11 +219,9 @@ export async function action({ request }) {
       return { message: data?.message || "Signup failed. Please try again." };
     }
 
-    // Auto-login: save credentials immediately so user doesn't have to log in again
     localStorage.setItem("email", data?.user?.email || email);
     localStorage.setItem("authToken", data?.token || "");
 
-    toast.success("Account created successfully! Welcome to Foodster 🎉");
     return redirect("/");
   } catch {
     return {

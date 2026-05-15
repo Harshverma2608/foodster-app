@@ -5,12 +5,12 @@ const Registration = ({ registrationInfo, errorMessage, isSubmitting }) => {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
-    <div className="h-screen w-screen bg-orange-100 flex items-center justify-center">
-      {/* MAIN CONTAINER (60% WIDTH) */}
-      <div className="w-240 h-full md:h-[85vh] bg-white rounded-2xl shadow-2xl flex overflow-hidden md:m-3">
-        <div className="flex w-full h-full">
+    <div className="min-h-screen w-full bg-orange-100 flex items-center justify-center p-4">
+      {/* MAIN CONTAINER */}
+      <div className="w-full max-w-4xl min-h-[85vh] bg-white rounded-2xl shadow-2xl flex overflow-hidden">
+        <div className="flex w-full">
           {/* LEFT SIDE - FORM */}
-          <div className="w-full md:w-120 flex items-center justify-center bg-orange-50 px-8">
+          <div className="w-full md:w-1/2 flex items-center justify-center bg-orange-50 px-6 py-10">
             {/* <form onSubmit={handleSubmit} className="w-full max-w-sm"> */}
             <Form method="post" className="w-full max-w-sm">
               <div className="text-center mb-6">

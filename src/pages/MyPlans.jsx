@@ -29,7 +29,7 @@ const MyPlans = () => {
                 Lunch (1:00 PM - 2:00 PM) • Mon to Sat
               </p>
               
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
                 <div className="bg-gray-50 p-3 rounded-lg border border-gray-100">
                   <p className="text-xs text-gray-500 mb-1">Plan Type</p>
                   <p className="font-medium text-gray-800">Monthly</p>
@@ -72,8 +72,8 @@ const MyPlans = () => {
 
         {/* History / Previous Plans */}
         <h2 className="font-oswald text-2xl text-gray-800 tracking-wide mb-6">PAST SUBSCRIPTIONS</h2>
-        <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
-          <table className="w-full text-left border-collapse">
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-x-auto">
+          <table className="w-full min-w-[500px] text-left border-collapse">
             <thead>
               <tr className="bg-gray-50 text-gray-500 text-xs uppercase tracking-wider">
                 <th className="p-4 font-medium">Provider</th>

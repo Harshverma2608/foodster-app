@@ -5,9 +5,8 @@ import UserLogin from "./pages/UserLogin";
 import UserSignup from "./pages/UserSignup";
 import Visit from "./pages/Visit";
 import Home from "./pages/Home";
-import Recipes from "./pages/Recipes";
-import MealPlan from "./pages/MealPlan";
-import GroceryList from "./pages/GroceryList";
+import Discover from "./pages/Discover";
+import MyPlans from "./pages/MyPlans";
 import Documentation from "./pages/Documentation";
 import ErrorPage from "./pages/ErrorPage";
 import { action as loginAction } from "./pages/UserLogin";
@@ -23,20 +22,14 @@ const router = createBrowserRouter([
     loader: requireAuth,
   },
   {
-    path: "/recipes",
-    element: <Recipes />,
+    path: "/discover",
+    element: <Discover />,
     errorElement: <ErrorPage />,
     loader: requireAuth,
   },
   {
-    path: "/meal-plan",
-    element: <MealPlan />,
-    errorElement: <ErrorPage />,
-    loader: requireAuth,
-  },
-  {
-    path: "/grocery-list",
-    element: <GroceryList />,
+    path: "/my-plans",
+    element: <MyPlans />,
     errorElement: <ErrorPage />,
     loader: requireAuth,
   },

@@ -5,44 +5,44 @@ const slides = [
   {
     image: "/hero1.jpg",
     tag: "Welcome to Foodster",
-    heading: "FOOD THAT FITS",
+    heading: "TIFFINS THAT FIT",
     highlight: "YOUR LIFE",
-    sub: "Discover recipes, plan your meals, and build smarter grocery lists — all in one place.",
+    sub: "Discover local home chefs, subscribe to daily meal plans, and get fresh food delivered to your door.",
   },
   {
     image: "/hero2.jpg",
-    tag: "Explore Cuisines",
+    tag: "Explore Home Chefs",
     heading: "TASTE THE",
-    highlight: "WORLD",
-    sub: "From street food to fine dining, find recipes from every corner of the globe.",
+    highlight: "AUTHENTICITY",
+    sub: "From rich North Indian thalis to light South Indian meals, find authentic home-cooked food.",
   },
   {
     image: "/hero3.jpg",
-    tag: "Plan Smarter",
+    tag: "Subscribe Easily",
     heading: "MEALS MADE",
     highlight: "EFFORTLESS",
-    sub: "Weekly meal planning that saves you time, money, and the daily dinner dilemma.",
+    sub: "Set up a weekly or monthly subscription and save hours of cooking and grocery shopping.",
   },
   {
     image: "/hero4.jpg",
-    tag: "Shop Smarter",
-    heading: "GROCERY LISTS",
-    highlight: "IN SECONDS",
-    sub: "Auto-generated shopping lists straight from your meal plan. No more forgotten items.",
+    tag: "Track Deliveries",
+    heading: "HOT & FRESH",
+    highlight: "ON TIME",
+    sub: "Track your daily tiffin delivery right to your office desk or apartment.",
   },
   {
     image: "/hero5.jpg",
-    tag: "Cook with Confidence",
-    heading: "RECIPES FOR",
-    highlight: "EVERY SKILL",
-    sub: "Whether you're a beginner or a seasoned cook, we've got the perfect recipe for you.",
+    tag: "Healthy Options",
+    heading: "NUTRITION FOR",
+    highlight: "YOUR GOALS",
+    sub: "Whether you need high-protein, keto, or low-calorie meals, our providers have you covered.",
   },
   {
     image: "/hero6.jpg",
     tag: "Eat Better",
     heading: "NOURISH YOUR",
     highlight: "BODY & SOUL",
-    sub: "Healthy, delicious, and easy-to-make meals that fit your lifestyle and goals.",
+    sub: "Healthy, delicious, and hygienic meals prepared in clean, certified home kitchens.",
   },
 ];
 
@@ -162,36 +162,36 @@ const HeroSlider = () => {
 
 const features = [
   {
-    icon: "🍽️",
-    title: "Discover Recipes",
-    desc: "Explore thousands of recipes from cuisines around the world, curated just for you.",
+    icon: "🥘",
+    title: "Discover Tiffins",
+    desc: "Search and filter nearby home-cooked meal providers based on your dietary preferences and budget.",
   },
   {
-    icon: "📋",
-    title: "Plan Your Meals",
-    desc: "Organize your weekly meals effortlessly and never wonder what's for dinner again.",
+    icon: "📅",
+    title: "Flexible Subscriptions",
+    desc: "Subscribe to weekly or monthly plans. Pause or resume your deliveries anytime with one click.",
   },
   {
-    icon: "🛒",
-    title: "Smart Grocery Lists",
-    desc: "Auto-generate shopping lists from your meal plan and save time at the store.",
+    icon: "🚚",
+    title: "Reliable Delivery",
+    desc: "Get your hot meals delivered directly to your office or home, exactly when you need them.",
   },
 ];
 
 const testimonials = [
   {
     name: "Harsh V.",
-    text: "Foodster completely changed how I cook at home. The recipes are amazing!",
-    avatar: "AO",
+    text: "Foodster completely changed how I eat as a bachelor. The tiffins are amazing and affordable!",
+    avatar: "HV",
   },
   {
     name: "Sarthak A.",
-    text: "Meal planning used to stress me out. Now it takes five minutes a week.",
-    avatar: "JK",
+    text: "Working late meant ordering junk food. Now I get healthy, home-cooked dinners delivered daily.",
+    avatar: "SA",
   },
   {
     name: "Priya S.",
-    text: "The grocery list feature alone is worth it. So convenient.",
+    text: "The split-screen search makes it so easy to find providers near my PG. Highly recommended.",
     avatar: "PS",
   },
 ];
@@ -308,8 +308,7 @@ const Visit = () => {
             READY TO EAT BETTER?
           </h2>
           <p className="font-unna text-orange-100 text-lg mb-10">
-            Join thousands of food lovers already using Foodster to simplify
-            their kitchen life.
+            Join thousands of bachelors and professionals using Foodster to get fresh home-cooked meals delivered daily.
           </p>
           <Link to="/signup" className="orangeButton text-base font-semibold px-8 py-3 inline-block">
             <span className="relative z-10">Create Free Account</span>

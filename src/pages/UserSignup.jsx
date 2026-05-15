@@ -211,11 +211,15 @@ export async function action({ request }) {
       return { message: data?.message || "Signup failed. Please try again." };
     }
 
-    toast.success(data?.message || "Account created successfully");
-    return redirect("/login");
+    // Auto-login: save credentials immediately so user doesn't have to log in again
+    localStorage.setItem("email", data?.user?.email || email);
+    localStorage.setItem("authToken", data?.token || "");
+
+    toast.success("Account created successfully! Welcome to Foodster 🎉");
+    return redirect("/");
   } catch {
     return {
-      message: "Cannot reach server. Please check backend and try again.",
+      message: "Cannot reach server. Please check your connection and try again.",
     };
   }
 }

@@ -13,13 +13,119 @@
   --breakpoint-xlar:1250px;
   --breakpoint-halfxl:1400px;
   --font-anton: "Anton", "sans-serif";
-  --font-oswald: "Oswald", "sans-serif";      /*use this */
+  --font-oswald: "Oswald", "sans-serif";
   --font-playfair: "Playfair", serif;   
-  --font-geist: "Geist", sans-serif;          /*use this */
+  --font-geist: "Geist", sans-serif;
   --font-mrs: "Mrs Saint Delafield", cursive;
   --font-style: "Style Script", cursive;    
-  --font-great: "Great Vibes", cursive;       /*use this */
-  --font-unna: "Unna", serif;    /*use this */
+  --font-great: "Great Vibes", cursive;
+  --font-unna: "Unna", serif;
+
+  /* Colors from Design System */
+  --color-primary: #b61722;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #da3437;
+  --color-on-primary-container: #fffbff;
+  --color-secondary: #006c49;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #6cf8bb;
+  --color-on-secondary-container: #00714d;
+  --color-tertiary: #545c72;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #6c748b;
+  --color-on-tertiary-container: #fefcff;
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  --color-background: #f8f9ff;
+  --color-on-background: #0b1c30;
+  --color-surface: #f8f9ff;
+  --color-on-surface: #0b1c30;
+  --color-surface-variant: #d3e4fe;
+  --color-on-surface-variant: #5b403e;
+  --color-outline: #8f6f6d;
+  --color-outline-variant: #e4beba;
+  --color-surface-tint: #b91a24;
+  --color-inverse-surface: #213145;
+  --color-inverse-on-surface: #eaf1ff;
+  --color-inverse-primary: #ffb3ad;
+  --color-primary-fixed: #ffdad7;
+  --color-on-primary-fixed: #410004;
+  --color-primary-fixed-dim: #ffb3ad;
+  --color-on-primary-fixed-variant: #930013;
+  --color-secondary-fixed: #6ffbbe;
+  --color-on-secondary-fixed: #002113;
+  --color-secondary-fixed-dim: #4edea3;
+  --color-on-secondary-fixed-variant: #005236;
+  --color-tertiary-fixed: #dae2fd;
+  --color-on-tertiary-fixed: #131b2e;
+  --color-tertiary-fixed-dim: #bec6e0;
+  --color-on-tertiary-fixed-variant: #3f465c;
+  --color-surface-dim: #cbdbf5;
+  --color-surface-bright: #f8f9ff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #eff4ff;
+  --color-surface-container: #e5eeff;
+  --color-surface-container-high: #dce9ff;
+  --color-surface-container-highest: #d3e4fe;
+  --color-pure-white: #FFFFFF;
+  --color-vibrant-orange: #F97316;
+  --color-deep-navy: #111827;
+  --color-background-surface: #F8FAFC;
+
+  /* Spacing */
+  --spacing-unit: 8px;
+  --spacing-margin-mobile: 20px;
+  --spacing-gutter: 24px;
+  --spacing-container-max: 1280px;
+  --spacing-section-gap: 120px;
+  --spacing-margin-desktop: 64px;
+
+  /* Fonts */
+  --font-label-md: "Geist";
+  --font-headline-lg: "Montserrat";
+  --font-body-lg: "Geist";
+  --font-headline-md: "Montserrat";
+  --font-display-lg-mobile: "Montserrat";
+  --font-display-lg: "Montserrat";
+  --font-label-sm: "Geist";
+  --font-body-md: "Geist";
+
+  /* Text Sizes & Weights */
+  --text-label-md: 14px;
+  --text-label-md--line-height: 1.2;
+  --text-label-md--letter-spacing: 0.02em;
+  --text-label-md--font-weight: 600;
+
+  --text-headline-lg: 32px;
+  --text-headline-lg--line-height: 1.2;
+  --text-headline-lg--font-weight: 700;
+
+  --text-body-lg: 18px;
+  --text-body-lg--line-height: 1.6;
+
+  --text-headline-md: 24px;
+  --text-headline-md--line-height: 1.3;
+  --text-headline-md--font-weight: 600;
+
+  --text-display-lg-mobile: 36px;
+  --text-display-lg-mobile--line-height: 1.2;
+  --text-display-lg-mobile--letter-spacing: -0.01em;
+  --text-display-lg-mobile--font-weight: 700;
+
+  --text-display-lg: 56px;
+  --text-display-lg--line-height: 1.1;
+  --text-display-lg--letter-spacing: -0.02em;
+  --text-display-lg--font-weight: 700;
+
+  --text-label-sm: 12px;
+  --text-label-sm--line-height: 1.2;
+  --text-label-sm--letter-spacing: 0.04em;
+  --text-label-sm--font-weight: 500;
+
+  --text-body-md: 16px;
+  --text-body-md--line-height: 1.5;
 }
 
 body {

@@ -9,7 +9,7 @@ export const isAuthenticated = () => {
 
 export const requireAuth = () => {
   if (!isAuthenticated()) {
-    return redirect("/login");
+    return redirect("/visit");
   }
 
   return null;

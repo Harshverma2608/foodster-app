@@ -48,7 +48,7 @@ const Visit = () => {
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white/80 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-5'} px-6 md:px-16`}>
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-orange-400 to-red-500 rounded-xl flex items-center justify-center text-white font-oswald text-xl shadow-lg shadow-orange-500/30">F</div>
+            <img src="/FoodsterLogo3.png" alt="Foodster Logo" className="h-10 w-auto object-contain drop-shadow-sm" />
             <span className="font-oswald text-2xl font-bold tracking-wide text-gray-900">
               Foodster
             </span>
@@ -201,7 +201,7 @@ const Visit = () => {
       <footer className="bg-white border-t border-gray-100 py-12 px-6 md:px-16">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-gray-900 rounded flex items-center justify-center text-white font-oswald shadow-sm">F</div>
+            <img src="/FoodsterLogo3.png" alt="Foodster Logo" className="h-8 w-auto object-contain opacity-90" />
             <span className="font-oswald text-xl font-bold tracking-wide text-gray-900">Foodster</span>
           </div>
           <p className="text-gray-500 text-sm">© {new Date().getFullYear()} Foodster Technologies. All rights reserved.</p>
